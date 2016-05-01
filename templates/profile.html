@@ -1,4 +1,23 @@
 <!DOCTYPE HTML>
-<link rel = "stylesheet" type = "text/css" href = {{ url_for('static',filename = 'style.css') }}
-<title>Welcome to our site</title>
-<h1> Hey there {{ name }} </h1>
+<link rel = "stylesheet" type = "text/css" href = {{ url_for('static',filename = 'bootstrap.css') }}>
+<title> Welcome to our site</title>
+
+<div class="container">
+  <h1> Hello {{ name }} </h1> 
+  <div class = "col-md-6">
+  <p> Thanks for visiting our site </p>
+  <p> This is a site which will give you all the info you need about our event.</p>
+  </div>
+  <div class = "col-md-6">
+  <img src="/static/image1.jpg" style="width:504px;height:358px;">
+  </div>  
+  <div class='visible-xs clearfix'> 
+  </div>
+  <div class="col-md-2">
+  <button type="button">Look at the schedule</button>
+  </div> 
+  <div class="col-md-2">
+  <button type="button">See our story</button>
+  </div>
+</div>
+

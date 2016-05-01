@@ -1,4 +1,4 @@
-#!flask/bin/python
+  #!flask/bin/python
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -12,9 +12,9 @@ def index(user=None):
 def about():
   return 'We are here to welcome you. Here is our story:' 
 
-@app.route('/file/<user>')
-def file(user):
-  return "<h1>Welcome to our site! %s </h1>" % user
+# @app.route('/file/<user>')
+# def file(user):
+#   return "<h1>Welcome to our site! %s </h1>" % user
 
 @app.route('/post/<int:id>')
 def post(id):
