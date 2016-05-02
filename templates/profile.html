@@ -2,22 +2,76 @@
 <link rel = "stylesheet" type = "text/css" href = {{ url_for('static',filename = 'bootstrap.css') }}>
 <title> Welcome to our site</title>
 
-<div class="container">
-  <h1> Hello {{ name }} </h1> 
-  <div class = "col-md-6">
-  <p> Thanks for visiting our site </p>
-  <p> This is a site which will give you all the info you need about our event.</p>
-  </div>
-  <div class = "col-md-6">
-  <img src="/static/image1.jpg" style="width:504px;height:358px;">
-  </div>  
-  <div class='visible-xs clearfix'> 
-  </div>
-  <div class="col-md-2">
-  <button type="button">Look at the schedule</button>
+<div class='navbar navbar-default'>  
+  <div class="container">
+   <a href='/' class="navbar-brand">Welcome!</a>
+   <ul class="nav navbar-nav navbar-right">
+      <li><a href="wedding.html">Wedding Schedule</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="music.html">Music and Dance</a></li>
+      <li><a href="accommodations.html">Accommodations</a></li>
+   </ul>  
   </div> 
-  <div class="col-md-2">
-  <button type="button">See our story</button>
-  </div>
 </div>
 
+<div class="container">
+  <h1> Hello {{ name }} </h1> 
+
+  <div class = "col-md-6 well">
+    <p> Thanks for visiting our site! </p>
+    <p> This is a site which will give you all the info you need about our event.</p>
+
+      <div class="col-md-5">
+      <button type="button" class="btn btn-lg btn-primary">Look at the schedule</button>
+      </div> 
+
+      <div class="col-md-3">
+        <button type="button" class="btn btn-lg btn-info">See our story</button>
+      </div>
+  </div> 
+
+
+  <div class = "col-md-6">
+  <img src="/static/image1.jpg" style="width:504px;height:358px;"> 
+
+</div>
+
+<!-- <div class='footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-3'>
+            <h4>Our Story</h4>
+            <p><i>All about our story <a href='tickets.html'>See our story</a>!</p>
+            <p><a href='about.html'>More About Us</a></p>
+          </div>
+
+          <div class='col-md-2 col-md-offset-1'>
+            <h4>Links</h4>
+            <ul>
+              <li><a href='/'>Home</a></li>
+              <li><a href='tickets.html'>Tickets</a></li>
+              <li><a href='stations.html'>Stations</a></li>
+            </ul>
+          </div>
+
+          <div class='col-md-2'>
+            <h4>Stay in Touch</h4>
+            <ul>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='contact.html'>Contact Us</a></li>
+              <li><a href='/blog'>Blog</a></li>
+              <li><a href='http://twitter.com/codeschool'>Twitter</a></li>
+              <li><a href='http://facebook.com/codeschool'>Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class='col-md-3 col-md-offset-1'>
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href='mailto:blastingoff@codeschool.com'>sanketgupta89@gmail.com</a></li>
+            </ul>
+            <p>Blasting Off With Bootstrap &copy;2214.</p>
+          </div>
+        </div>
+      </div> -->
