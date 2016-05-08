@@ -1,19 +1,28 @@
 <!DOCTYPE HTML>
 <link rel = "stylesheet" type = "text/css" href = {{ url_for('static',filename = 'bootstrap.css') }}>
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+<script type="text/javascript" src= {{ url_for('static', filename='jquery-2.2.3.js') }}></script>
+<script type="text/javascript" src= {{ url_for('static', filename='bootstrap.min.js') }}></script>
 <title> Welcome to our site</title>
 
-<!-- <div class='navbar navbar-default navbar-static-top'>  
-  <div class="container">
+<div class='navbar navbar-default navbar-static-top'>  
+  <div class="container dropdown">
    <a href='/' class="navbar-brand">Welcome!</a>
    <ul class="nav navbar-nav navbar-right">
       <li><a href="wedding.html">Wedding Schedule</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="family.html">Family</a></li>
-      <li><a href="music.html">Music and Dance</a></li>
-      <li><a href="accommodations.html">Accommodations</a></li>
-   </ul>  
-  </div> 
-</div> -->
+      <li><a href="photos.html">Photos</a></li> 
+      <li>  
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">More
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu"> 
+            <li><a href="family.html">Family</a></li>
+            <li><a href="music.html">Music and Dance</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            </ul>    
+     </li>
+   </ul>
+  </div>
+</div>
 
 <div class="container">
   <h1> Hello {{ name }} </h1> 
