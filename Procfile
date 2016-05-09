@@ -1,4 +1,5 @@
-web: gunicorn project:app
+web: gunicorn gettingstarted.wsgi --log-file -
+~                                               
 
 
 
